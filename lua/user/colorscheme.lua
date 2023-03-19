@@ -9,8 +9,8 @@ Color.new("yellow", "#f0c674")
 
 -- Define highlights in terms of `colors` and `groups`
 Group.new("Function", colors.yellow, colors.background, styles.bold)
-Group.new("luaFunctionCall", groups.Function, groups.Function, groups.Function)
 
+Group.new("luaFunctionCall", groups.Function, groups.Function, groups.Function)
 -- Define highlights in relative terms of other colors
 Group.new("Error", colors.red:light(), nil, styles.bold)
 
@@ -30,7 +30,7 @@ if (not status) then return end
 
 n.setup({
   comment_italics = true,
-  background_set = false,
+  background_set = true,
 })
 
 local cb = require('colorbuddy.init')
