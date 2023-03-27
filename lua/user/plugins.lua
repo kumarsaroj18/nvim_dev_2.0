@@ -85,6 +85,9 @@ return packer.startup(function(use)
 	use({ "petertriho/nvim-scrollbar" })
 	use({ "karb94/neoscroll.nvim" })
 
+  use({"mfussenegger/nvim-dap"}) -- for java debugging support
+  use({"mfussenegger/nvim-jdtls"}) -- for java language support
+
 	-- Telescope
 	use({ "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" })
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
@@ -95,6 +98,7 @@ return packer.startup(function(use)
 		commit = "8e763332b7bf7b3a426fd8707b7f5aa85823a5ac",
 	})
 
+  use ({'sunjon/shade.nvim'})
 	-- Git
 	use({ "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" })
 
